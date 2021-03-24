@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap');
 
 :root {
-    --color: rgb(45, 188, 255);
+    --color: crimson;
 }
 
 *{
@@ -209,7 +209,7 @@ button.createbtn i{
 }
 .nav ul li.active,
 .nav ul li:hover{
-    box-shadow: 0px -3px 6px rgb(45, 188, 255) inset;
+    box-shadow: 0px -3px 6px crimson inset;
 }
 .profile-body{
     width: 100%;
@@ -227,6 +227,46 @@ button.createbtn i{
     cursor: pointer;
     text-transform: lowercase;
 }
+#postarea{
+    resize: none;
+    width: 800px;
+    height: 70px;
+    border-bottom: none;
+}
+.nav2{
+    width: 100%;
+    z-index: -1;
+}
+.nav2 ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+}
+.nav2 ul li{
+    padding: 2px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+.nav2 button{
+    display: flex;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+.nav2 button:hover{
+    box-shadow: 0px -1px 6px crimson inset;
+}
+.nav2 ul li:hover{
+    box-shadow: 0px -1px 6px crimson inset;
+}
+
+
+
 
 @media(max-width: 1100px) {
     .profile-side{
