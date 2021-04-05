@@ -31,6 +31,18 @@ p{
     font-size: 1.4rem;
     line-height: 1.9rem;
 }
+.section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .9rem;
+    text-align: center;
+}
+.section-title span{
+    color: goldenrod;
+}
+
 
 
 /*home Section Styling*/
@@ -188,7 +200,7 @@ p{
 
 /*Service Setion style start*/
 
-#service{}
+
 #service .service{
     flex-direction: column;
     text-align: center;
@@ -196,17 +208,7 @@ p{
     margin: 0 auto;
     padding: 100px 0;
 }
-#service .section-title{
-    font-size: 4rem;
-    font-weight: 300;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: .9rem;
-    text-align: center;
-}
-#service .section-title span{
-    color: goldenrod;
-}
+
 #service .service-top p{
     color: black;
     font-size: 1.5rem;
@@ -231,6 +233,7 @@ p{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    cursor: pointer;
     padding: 30px;
     border-radius: 10px;
     background-image: url(https://kaiixer099.github.io/sampleprojects/PersonalPortfolio/img/webdesign.jpg);
@@ -239,6 +242,7 @@ p{
     position: relative;
     z-index: 1;
     overflow: hidden;
+    transition: all 0.5s ease;
 }
 #service .service-item::after{
     content: '';
@@ -251,6 +255,9 @@ p{
     opacity: 0.8;
     z-index: -1;
 }
+#service .service-item:hover{
+    transform: scale(1.05);
+}
 #service .service-bottom .icon{
     height: 80px;
     width: 80px;
@@ -262,10 +269,88 @@ p{
     margin-bottom: 10px;
     letter-spacing: 8px;
     text-transform: uppercase;
+    justify-content: left;
+}
+#service .service-item:hover span{
+    opacity: 1;
+}
+#service .service-item span{
+    transition: 0.5s;
+    opacity: 0;
 }
 
+#service .service-item span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, crimson,goldenrod);
+    animation: animate1 0.5s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+#service .service-item span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, crimson,goldenrod);
+    animation: animate2 0.5s linear infinite;
+}
+@keyframes animate2{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+#service .service-item span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to left, crimson,goldenrod);
+    animation: animate3 0.5s linear infinite;
+}
+@keyframes animate3{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+#service .service-item span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to top, crimson,goldenrod);
+    animation: animate4 0.5s linear infinite;
+}
+@keyframes animate4{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
 
 /*Service Setion style end*/
+
 
 
 
