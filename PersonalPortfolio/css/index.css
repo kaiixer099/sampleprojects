@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 
 *{
    
@@ -8,7 +9,7 @@
 }
 html{
     font-size: 10px;
-    font-family: 'Bangers',sans-serif;
+    font-family: 'Gruppo',sans-serif;
 }
 a{
     text-decoration: none;
@@ -30,6 +31,7 @@ p{
     text-align: left;
     font-size: 1.4rem;
     line-height: 1.9rem;
+    font-weight: 800;
 }
 .section-title{
     font-size: 4rem;
@@ -37,6 +39,7 @@ p{
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: .9rem;
+    font-weight: 800;
     text-align: center;
 }
 .section-title span{
@@ -154,6 +157,7 @@ p{
     margin: 10px;
     border: 2px solid goldenrod;
     font-size: 2rem;
+    font-weight: 800;
     text-decoration: none;
     letter-spacing: 5px;
     color: #fff;
@@ -227,7 +231,9 @@ p{
 
 /*Service Setion style start*/
 
-
+#service{
+    background: linear-gradient(-120deg, transparent , goldenrod);
+}
 #service .service{
     flex-direction: column;
     text-align: center;
@@ -243,7 +249,7 @@ p{
     margin-left: 20px;
     margin-right: 20px;
     line-height: 2rem;
-    font-weight: 300;
+    font-weight: 800;
     letter-spacing: .05rem;
 }
 #service .service-bottom{
@@ -312,7 +318,7 @@ p{
     left: 0;
     width: 100%;
     height: 5px;
-    background: linear-gradient(to right, crimson,goldenrod);
+    background: linear-gradient(to right, transparent, goldenrod);
     animation: animate1 0.5s linear infinite;
 }
 @keyframes animate1{
@@ -330,7 +336,7 @@ p{
     right: 0;
     width: 5px;
     height: 100%;
-    background: linear-gradient(to bottom, crimson,goldenrod);
+    background: linear-gradient(to bottom, transparent,goldenrod);
     animation: animate2 0.5s linear infinite;
 }
 @keyframes animate2{
@@ -347,7 +353,7 @@ p{
     left: 0;
     width: 100%;
     height: 5px;
-    background: linear-gradient(to left, crimson,goldenrod);
+    background: linear-gradient(to left, transparent,goldenrod);
     animation: animate3 0.5s linear infinite;
 }
 @keyframes animate3{
@@ -364,7 +370,7 @@ p{
     left: 0;
     width: 5px;
     height: 100%;
-    background: linear-gradient(to top, crimson,goldenrod);
+    background: linear-gradient(to top, transparent,goldenrod);
     animation: animate4 0.5s linear infinite;
 }
 @keyframes animate4{
@@ -423,6 +429,7 @@ p{
                     0 0 40px goldenrod,
                     0 0 80px goldenrod,
                     0 0 100px goldenrod;
+        font-weight: 800;
     }
 }
 
