@@ -52,11 +52,11 @@ p{
     background-position: top center;
     position: relative;
     z-index: 1;
-    transition: 1s;
+    transition: 2s;
 
     animation-name: animate;
     animation-direction: alternate-reverse;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-play-state: running;
@@ -253,7 +253,7 @@ p{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    cursor:crosshair;
+    cursor:pointer;
     padding: 30px;
     border-radius: 10px;
     background-image: url(https://kaiixer099.github.io/sampleprojects/PersonalPortfolio/img/webdesign.jpg);
