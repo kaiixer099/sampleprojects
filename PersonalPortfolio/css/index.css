@@ -233,7 +233,7 @@ p{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    cursor: pointer;
+    cursor:crosshair;
     padding: 30px;
     border-radius: 10px;
     background-image: url(https://kaiixer099.github.io/sampleprojects/PersonalPortfolio/img/webdesign.jpg);
