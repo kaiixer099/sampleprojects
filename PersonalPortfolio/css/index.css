@@ -52,7 +52,27 @@ p{
     background-position: top center;
     position: relative;
     z-index: 1;
+    transition: 1s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
 }
+
+@keyframes animate{
+    0%{
+        background-image: url(https://kaiixer099.github.io/sampleprojects/PersonalPortfolio/img/joey1.jpg);
+    }
+    100%{
+        background-image: url(https://kaiixer099.github.io/sampleprojects/PersonalPortfolio/img/joey2.jpg);
+    }
+}
+
+
 #home::after{
     content: '';
     position: absolute;
