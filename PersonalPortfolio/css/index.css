@@ -20,6 +20,18 @@ a{
     justify-content: center;
     align-items: center;
 }
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+p{
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
 
 /*home Section Styling*/
 #home{
@@ -89,25 +101,7 @@ a{
     animation-delay: 2.5s;
 }
 
-/* 
-#home .cta{
-    display: inline-block;
-    padding: 10px 30px;
-    color: goldenrod;
-    background-color: transparent;
-    border: 2px solid goldenrod;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: .5rem;
-    margin-top: 30px;
-    transition: 0.3s ease;
-    transition-property: background-color, color;
-}
-#home .cta:hover{
-    color:#fff;
-    background-color: goldenrod;
-}
-*/
+
 .button-container{
     display: flex;
     justify-content: flex-start;
@@ -188,8 +182,108 @@ a{
     transition-delay: 0s, 0.3s, 0.3s, 0.3s;
 }
 
-
 /*home section end style*/
+
+
+
+/*Service Setion style start*/
+
+#service{}
+#service .service{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#service .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .9rem;
+    text-align: center;
+}
+#service .section-title span{
+    color: goldenrod;
+}
+#service .service-top p{
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 2rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+#service .service-bottom{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#service .service-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(/img/webdesign.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#service .service-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: 0.8;
+    z-index: -1;
+}
+#service .service-bottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#service .service-item h2{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+
+/*Service Setion style end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Keyframes*/
 @keyframes textrevealbox{
