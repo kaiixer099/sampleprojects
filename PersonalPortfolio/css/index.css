@@ -113,6 +113,10 @@ p{
     animation: textreveal_name .5s ease forwards;
     animation-delay: 3s;
 }
+#home h1:nth-child(4){
+    letter-spacing: 5px;
+    animation-delay: 4s;
+}
 #home h1 span{
     position: absolute;
     top: 0;
@@ -131,6 +135,9 @@ p{
 }
 #home h1:nth-child(3) span{
     animation-delay: 2.5s;
+}
+#home h1:nth-child(4) span{
+    animation-delay: 3.5s;
 }
 
 
