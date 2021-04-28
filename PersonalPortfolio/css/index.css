@@ -69,13 +69,13 @@ p{
 
 @keyframes animate{
     0%{
-        background-image: url(/img/joey1.jpg);
+        background-image: url(https://kaiixer099.github.io/sampleprojects/PersonalPortfolio/img/joey1.jpg);
     }
     50%{
-        background-image: url(/img/joey2.jpg);
+        background-image: url(https://kaiixer099.github.io/sampleprojects/PersonalPortfolio/img/joey2.jpg);
     }
     100%{
-        background-image: url(/img/joey3.jpg);
+        background-image: url(https://kaiixer099.github.io/sampleprojects/PersonalPortfolio/img/joey3.jpg);
     }
 }
 
