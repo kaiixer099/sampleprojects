@@ -421,7 +421,7 @@ p{
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(2, 55%);
+    grid-template-columns: repeat(2, 65%);
 }
 #projects .project-item{
     display: flex;
