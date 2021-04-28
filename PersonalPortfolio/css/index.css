@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 html{
     font-size: 10px;
@@ -403,7 +404,89 @@ p{
 
 /*Service Setion style end*/
 
+/* project section */
+#projects .projects{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#projects p{
+    color: #000;
+}
+#projects .projects-header h1{
+    margin-bottom: 50px;
+}
+#projects .all-projects{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 55%);
+}
+#projects .project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#projects .project-info{
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to right, transparent, goldenrod);
+}
+#projects .project-info h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+#projects .project-info h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 10px;
+    letter-spacing: 10px;
+    text-shadow: 0 0 10px black,
+    0 0 20px black,
+    0 0 40px gold,
+    0 0 80px gold,
+    0 0 100px black;
+}
+#projects .project-img{
+    flex-basis: 50%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+#projects .project-img img{
+    object-fit: contain;
+    transition: .3s ease transform;
+}
+#projects .project-img:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .4;
+}
+#projects .project-item:hover .project-img img{
+    transform: scale(1.1);
+}
+#projects .project-item:hover .project-img::after {
+    opacity: 0;
+}
 
+
+/* project section end */
 
 
 
