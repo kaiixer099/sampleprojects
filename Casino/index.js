@@ -5,10 +5,11 @@ const slot3 = document.getElementById('slot3');
 const startGame = document.getElementById('start');
 const winMsg = document.getElementById('winner');
 const retry = document.getElementById('retry');
+const retryAgain = document.getElementById('retryAgain');
 
 startGame.addEventListener('click', spinMachine);
 retry.addEventListener('click', restartGame);
-
+retryAgain.addEventListener('click', restartGame);
 
 // spin the machine
 function spinMachine(){
@@ -40,6 +41,5 @@ function restartGame(){
     slot3.innerHTML = '';
     startGame.classList.remove('hide');
     winMsg.classList.remove('show');
-
 
 }
