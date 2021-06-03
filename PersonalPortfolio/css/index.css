@@ -6,6 +6,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    outline: 1px dotted red;
     
 }
 html{
@@ -265,7 +267,7 @@ p{
     margin-top: 50px;
 }
 #service .service-item{
-    flex-basis: 80%;
+    flex-basis: 70%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -408,7 +410,7 @@ p{
 #projects .projects{
     flex-direction: column;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     padding: 100px 0;
 }
 #projects p{
@@ -418,17 +420,18 @@ p{
     margin-bottom: 50px;
 }
 #projects .all-projects{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(2, 65%);
+    grid-template-columns: repeat(3, 35%);
 }
 #projects .project-item{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 80%;
+    width: 75%;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -438,7 +441,7 @@ p{
     flex-basis: 50%;
     height: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     background: linear-gradient(to right, transparent, goldenrod);
