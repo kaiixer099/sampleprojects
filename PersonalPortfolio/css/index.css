@@ -406,6 +406,9 @@ p{
 /*Service Setion style end*/
 
 /* project section */
+#projects {
+    background: linear-gradient(120deg, transparent , goldenrod);
+}
 #projects .projects{
     flex-direction: column;
     max-width: 1200px;
@@ -416,13 +419,14 @@ p{
     color: #000;
 }
 #projects .projects-header h1{
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 }
 #projects .all-projects{
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 80vw;
     grid-template-columns: repeat(3, 35%);
 }
 #projects .project-item{
@@ -430,7 +434,7 @@ p{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 75%;
+    width: 90%;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -491,7 +495,11 @@ p{
 
 /* about section */
 #about{
-    background: linear-gradient(120deg, transparent , goldenrod);
+    background: linear-gradient(-180deg, transparent , goldenrod);
+}
+#about h2{
+    color: red;
+    font-size: xx-large;
 }
 #about .about{
     flex-direction: column-reverse;
@@ -548,7 +556,20 @@ p{
 }
 
 /* about section end */
-
+footer{
+    background: #111;
+    padding: 10px 23px;
+    color: #fff;
+    font-size: 15px;
+}
+footer span a{
+    color: goldenrod;
+    text-decoration: none;
+    
+}
+footer span a:hover{
+    text-decoration: underline;
+}
 
 
 
